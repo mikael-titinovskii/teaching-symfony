@@ -1,2 +1,2 @@
 <?php
-ываы
+ya nichego ne sdelala
