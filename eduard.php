@@ -1,4 +1,5 @@
 <?php
+
 $car_brand = ['audi', 'bmw', 'peugeot'];
 $tipe = ['car', 'bike', 'boat'];
 $result = array_merge($car_brand, $tipe);
