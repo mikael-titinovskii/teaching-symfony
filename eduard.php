@@ -1,6 +1,6 @@
 <?php
 
-$car_brand = ['audi', 'bmw', 'peugeot'];
+$car_brand  = ['audi', 'bmw', 'peugeot'];
 $tipe = ['car', 'bike', 'boat'];
 $result = array_merge($car_brand, $tipe);
 print_r($result);
