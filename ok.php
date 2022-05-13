@@ -1,2 +1,3 @@
 <?php
-ya nichego ne sdelala
+
+echo '321';
