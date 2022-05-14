@@ -22,7 +22,7 @@ function sortirovka($a, $b){
     }
     else{
         return 1;
-    };
+    }
 }
 $a = [4, 2, 1, 3];
 usort($a, "sortirovka");
