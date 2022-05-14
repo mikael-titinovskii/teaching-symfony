@@ -2,7 +2,7 @@
 
 //sort
 $a = [1, 2, 3, 4];
-$b = sort($a);
+sort($a);
 print_r($a);
 echo "\n";
 
