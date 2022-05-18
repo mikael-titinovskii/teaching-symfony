@@ -10,7 +10,7 @@ print_r($result);
 
 <?php
 $sequence = [10, 20, 100, 3];
-sort ($sequence);
+sort($sequence);
 print_r($sequence);
 ?>
 
