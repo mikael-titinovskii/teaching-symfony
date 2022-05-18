@@ -1,8 +1,8 @@
 <?php
 
-$car_brand  = ['audi', 'bmw', 'peugeot'];
-$tipe = ['car', 'bike', 'boat'];
-$result = array_merge($car_brand, $tipe);
+$carbrand  = ['audi', 'bmw', 'peugeot'];
+$type = ['car', 'bike', 'boat'];
+$result = array_merge($carbrand, $type);
 print_r($result);
 ?>
 
@@ -19,17 +19,18 @@ print_r($sequence);
 <?php
 function znachenie($a, $b)
 {
-    if ($a == $b) {
-        return 0;
+    if ($a < $b){
+        return -1;
+    } else {
+        return 1;
     }
-    if($a < $b) return -1; else 1;;
-}
 
-$a = [10, 4, 7, 30, 5];
+    $a = [10, 4, 7, 30, 5];
 
-usort($a, "znachenie");
+    usort($a, "znachenie");
 
-foreach ($a as $key => $value) {
-    echo "$key: $value\n";
+    foreach ($a as $key => $value) {
+        echo "$key: $value\n";
+    }
 }
 ?>
