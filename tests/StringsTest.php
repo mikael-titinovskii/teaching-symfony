@@ -49,7 +49,7 @@ class StringsTest extends TestCase
         $s = new Strings();
 
         $this->assertEquals(
-            '12,12,12',
+            '12',
             $s->implodeString(['1', '2'])
         );
     }
