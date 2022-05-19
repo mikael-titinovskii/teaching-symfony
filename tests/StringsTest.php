@@ -24,6 +24,14 @@ use PHPUnit\Framework\TestCase;
  */
 class StringsTest extends TestCase
 {
+    public function testExample()
+    {
+        $s = new Strings();
+        $this->assertEquals(
+            'йохохо йохохо йохохо ',
+            $s->exampleStrRepeat('йохохо ', 3)
+        );
+    }
 
     public function testConcatenation()
     {

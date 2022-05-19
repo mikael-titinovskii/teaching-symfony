@@ -4,6 +4,12 @@ namespace App;
 
 class Strings
 {
+    public function exampleStrRepeat($string, $t)
+    {
+        $result = str_repeat($string , $t);
+        return $result;
+    }
+
 
     public function concatenate($string, $string1)
     {
