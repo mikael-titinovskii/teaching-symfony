@@ -13,24 +13,31 @@ class Strings
 
     public function concatenate($string, $string1)
     {
-        // тут решение делайте
-        return '';
+        return $string. $string1;
     }
 
     public function explodeAndReverse($string)
     {
-
-        return [];
+//1. строку в массив
+//2. перевернуть массив
+//3. вернуть массив
+        $a = explode(',',$string);
+        $a = array_reverse($a);
+        return $a;
     }
 
     public function implodeString(array $array)
     {
-
-        return '';
+        str($array);
+        explode(',',$array);
+        var_dump(implode(',', $array));
+        return $array
+            ;
     }
 
     public function replaceString($text, $replacement) {
-        return '';
+        $text = str_replace("%numberOfSushek%", "15", "У маши были %numberOfSushek% сушек");
+        return $text;
     }
 
     public function findXWithRegex($str) {
