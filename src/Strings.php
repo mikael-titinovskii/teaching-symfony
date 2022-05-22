@@ -44,6 +44,10 @@ class Strings
 
     public function findXWithRegex($str)
     {
-        return '';
+        $matches = null;
+
+        preg_match_all('/x=([0-9a-z]+)/', $str, $matches);
+
+        return $matches[1][0];
     }
 }

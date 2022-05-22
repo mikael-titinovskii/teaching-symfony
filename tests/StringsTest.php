@@ -11,7 +11,7 @@ use PHPUnit\Framework\TestCase;
  * strpos
  * substr
  * str_replace
- * preg_match_all * опционально
+ * preg_match_all * опционально https://regex101.com/
  *
  * слабое сравнене ==
  * 0    ->  false
