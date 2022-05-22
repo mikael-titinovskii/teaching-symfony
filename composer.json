@@ -1,0 +1,22 @@
+{
+    "name": "mike/test-lesson",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/",
+            "Test\\": "tests/"
+        },
+        "autoload-dev": {
+            "psr-4": { "App\\Tests\\": "tests/" }
+        }
+    },
+
+    "authors": [
+        {
+            "name": "Mikael Titinovskiy",
+            "email": "Mikael.Titinovskii@mindgeekconsultants.com"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
