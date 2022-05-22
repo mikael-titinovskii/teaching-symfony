@@ -6,41 +6,44 @@ class Strings
 {
     public function exampleStrRepeat($string, $t)
     {
-        $result = str_repeat($string , $t);
+        $result = str_repeat($string, $t);
+
         return $result;
     }
 
 
     public function concatenate($string, $string1)
     {
-        return $string. $string1;
+        return $string.$string1;
     }
 
     public function explodeAndReverse($string)
     {
-//1. строку в массив
-//2. перевернуть массив
-//3. вернуть массив
-        $a = explode(',',$string);
+        //1. строку в массив
+        //2. перевернуть массив
+        //3. вернуть массив
+        $a = explode(',', $string);
         $a = array_reverse($a);
+
         return $a;
     }
 
     public function implodeString(array $array)
     {
-        str($array);
-        explode(',',$array);
-        var_dump(implode(',', $array));
-        return $array
-            ;
+        $result = implode('', $array);
+
+        return $result;
     }
 
-    public function replaceString($text, $replacement) {
-        $text = str_replace("%numberOfSushek%", "15", "У маши были %numberOfSushek% сушек");
+    public function replaceString($text, $replacement)
+    {
+        $text = str_replace("%numberOfSushek%", $replacement, $text);
+
         return $text;
     }
 
-    public function findXWithRegex($str) {
+    public function findXWithRegex($str)
+    {
         return '';
     }
 }
