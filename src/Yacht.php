@@ -1,11 +1,17 @@
 <?php
 
-namespace App;
-
-class Yacht extends Marine
+abstract class Yacht extends Transport implements CanSwim
 {
+
+    public function getCategory()
+    {
+        return 'Y';
+    }
+
     public function swim()
     {
-        echo "Swims fast!";
+        echo "im swimming";
     }
+
+
 }
