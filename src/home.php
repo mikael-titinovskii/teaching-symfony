@@ -10,6 +10,19 @@ class CountriesConnector
         // root root
         // https://www.php.net/manual/ru/book.pdo.php
     }
+
+$dsn = "mysql:host=localhost;dbname=mydb";
+$user = "root";
+$passwd = "";
+
+$pdo = new PDO($dsn, $user, $passwd);
+
+$stm = $pdo->query("SELECT VERSION()");
+
+$version = $stm->fetch();
+
+echo $version[0] . PHP_EOL;
+
 }
 
 class Country {
